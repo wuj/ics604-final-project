@@ -27,7 +27,7 @@ cd ics604-final-project
 
 The dataset is too large to include in the repository (~782 MB, ~3.8 million rows). To reproduce the analysis:
 
-1. Download the dataset from Github: https://github.com/wuj/ics604-final-project/releases/download/untagged-872de55a40e7913381cc/openpowerlifting-2026-03-14.zip
+1. Download the dataset from Github: https://github.com/wuj/ics604-final-project/releases/download/v1.0.0/openpowerlifting-2026-03-14.zip
 
 2. This file is available as a **Github Release artifact** and has been pinned to OpenPowerlifting data revision **`dfb517af`** (dated March 14, 2026) for exact reproducibility.
 
