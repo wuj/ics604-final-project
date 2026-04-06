@@ -11,7 +11,9 @@ This project examines whether powerlifting competition entries differ in perform
 ├── notebook.ipynb          # Full analysis notebook (run top-to-bottom)
 ├── README.md               # This file
 ├── report.pdf              # Written report
-├── data/                   # Dataset directory (dataset files are not tracked; see below)
+├── data/                   # Dataset directory (dataset files are not tracked, see below)
+└── proposal/               
+    └── proposal.pdf        # Project proposal
 ```
 
 ## Clone the Repository  
