@@ -11,7 +11,7 @@ This project examines whether powerlifting competition entries differ in perform
 ├── notebook.ipynb          # Full analysis notebook (run top-to-bottom)
 ├── README.md               # This file
 ├── requirements.txt        # Python package dependencies (install with pip)
-├── report.pdf              # Written report
+├── report.pdf              # Written report that summarizes the study, methods, and results
 ├── data/                   # Dataset directory (dataset files are not tracked, see below)
 └── proposal/               
     └── proposal.pdf        # Project proposal
@@ -40,11 +40,11 @@ The dataset is too large to include in the repository (~782 MB, ~3.8 million row
    data/README.txt
    ```
 
-4. The notebook's cleaning cell (Cell 8) will generate `data/powerlifting-clean.csv`.
+4. The notebook's **Data Cleaning** cell will generate `data/powerlifting-clean.csv`.
 
 ## Requirements
 
-**Python 3.13+** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
+**Python 3.14.3** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
 
 ### Install dependencies
 
@@ -55,6 +55,8 @@ pip install -r requirements.txt
 ## Running the Notebook  
 
 The notebook is designed to run top-to-bottom in a single pass.  Always run all cells in order. 
+
+[`report.pdf`](report.pdf) is the companion written report for this project. It gives a shorter summary of the research questions, methods, results, and conclusions. Read it alongside [`notebook.ipynb`](notebook.ipynb) if you want the narrative write-up in addition to the full reproducible analysis.
 
 **Note:** A full Run All can take several minutes. The analysis runs 10,000 bootstrap resamples and 10,000 permutation shuffles across 78 subgroups (RQ1) and 12 age bins (RQ3), plus additional process illustrations. Expect the RQ1 test cell to be the longest-running cell.
 
@@ -71,21 +73,26 @@ jupyter lab notebook.ipynb
 
 After cloning the repository (see [Clone the Repository](#clone-the-repository) above), launch the notebook through Anaconda:
 
-1. Download and install [Anaconda](https://www.anaconda.com/download) (includes Python, Jupyter, and all required libraries).
-2. Open **Anaconda Navigator** and launch **Jupyter Notebook**.
-3. Navigate to the cloned project folder and open `notebook.ipynb`.
-4. Run all cells in order (**Run > Run All Cells**).
+1. Download and install [Anaconda](https://www.anaconda.com/download).
+2. Open the Anaconda environment you plan to use for this project.
+3. Install the pinned packages from [`requirements.txt`](requirements.txt) in that environment:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Open **Anaconda Navigator** and launch **Jupyter Notebook** or **JupyterLab** from that same environment.
+5. Navigate to the cloned project folder and open `notebook.ipynb`.
+6. Run all cells in order (**Run > Run All Cells**).
 
-No command line or manual package installation required.
+Anaconda includes Python and Jupyter, but it may not include the exact package versions pinned in [`requirements.txt`](requirements.txt). Installing from `requirements.txt` helps avoid version mismatch problems.
 
 ## Verifying a Successful Run
 
 A complete run produces **16 inline figures** and no errors. Key checkpoints:
 
-- **Cell 8** (Data Cleaning) prints filtering removal counts and the final cleaned shape, and writes `data/powerlifting-clean.csv`.
-- **Cell 11** (RQ1 Summary) prints the number of qualifying subgroup pairs.
-- **Cell 13** (RQ1 Results Summary) prints a breakdown of significant vs. non-significant subgroups for TotalKg and DOTS.
-- **Cell 26** (RQ2 Chi-Squared) prints contingency tables and chi-square test results for men and women.
-- **Cell 30** (RQ3 Intervals) prints a summary line: "Summary: X of 12 age bins have a one-sided 95% lower bound above zero."
+- The **Data Cleaning** cell prints filtering removal counts and the final cleaned shape, and writes `data/powerlifting-clean.csv`.
+- The **RQ1 Summary Table** cell prints the number of qualifying subgroup pairs.
+- The **RQ1 Results Summary** cell prints a breakdown of significant vs. non-significant subgroups for TotalKg and DOTS.
+- The **RQ2 Bin Diagnostics and Chi-Squared Tests** cell prints contingency tables and chi-square test results for men and women.
+- The **RQ3 Interval Evidence** cell prints a summary line: "Summary: X of 12 age bins have a one-sided 95% lower bound above zero."
 
 If any cell raises an error, restart the kernel and re-run all cells from the top -- earlier cells define variables that later cells depend on.
