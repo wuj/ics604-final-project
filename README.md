@@ -2,7 +2,7 @@
 
 **Jeff Wu | ICS 604: Applied Data Science | Spring 2026 | University of Hawaii at Manoa**
 
-This project examines whether powerlifting competition entries differ in performance depending on whether the entry was drug-tested or non-tested, using the OpenPowerlifting public dataset (~3.8 million records). The analysis compares TotalKg and DOTS scores across sex, weight class, equipment, performance level, and age.
+This project examines whether powerlifting competition entries differ in performance depending on whether the entry was drug tested or untested, using the OpenPowerlifting public dataset (~3.8 million records). The analysis compares TotalKg and DOTS scores across sex, weight class, equipment, performance level, and age.
 
 ## Repository Structure
 
@@ -18,11 +18,10 @@ This project examines whether powerlifting competition entries differ in perform
 
 ## Clone the Repository  
 
-The source code and dataset for this project are available on GitHub: https://github.com/wuj/ics604-final-project
+Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/wuj/ics604-final-project.git
-cd ics604-final-project
 ```
 
 ## Get the Dataset
@@ -40,15 +39,16 @@ The dataset is too large to include in the repository (~782 MB, ~3.8 million row
    data/README.txt
    ```
 
-4. The notebook's cleaning cell (Cell 9) will generate `data/powerlifting-clean.csv`.
+4. The notebook's cleaning cell (Cell 8) will generate `data/powerlifting-clean.csv`.
 
 ## Requirements
 
 **Python 3.13+** with the following packages:
 
-- pandas
-- numpy
+- jupyter
 - matplotlib
+- numpy
+- pandas
 - scipy
 
 No additional or non-standard libraries are needed.
@@ -56,7 +56,7 @@ No additional or non-standard libraries are needed.
 ### Install dependencies
 
 ```bash
-pip install jupyter pandas numpy matplotlib scipy
+pip install jupyter matplotlib numpy pandas scipy
 ```
 
 ## Running the Notebook  
@@ -67,33 +67,32 @@ The notebook is designed to run top-to-bottom in a single pass.  Always run all 
 
 ### Option A: Local
 
+After cloning the repository and installing dependencies (see [Requirements](#requirements) above), launch the notebook from the project folder:
+
 ```bash
-git clone https://github.com/wuj/ics604-final-project.git
 cd ics604-final-project
 jupyter notebook notebook.ipynb
 ```
 
 ### Option B: Anaconda
 
+After cloning the repository (see [Clone the Repository](#clone-the-repository) above), launch the notebook through Anaconda:
+
 1. Download and install [Anaconda](https://www.anaconda.com/download) (includes Python, Jupyter, and all required libraries).
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/wuj/ics604-final-project.git
-   ```
-3. Open **Anaconda Navigator** and launch **Jupyter Notebook**.
-4. Navigate to the project folder and open `notebook.ipynb`.
-5. Run all cells in order (**Cell > Run All**).
+2. Open **Anaconda Navigator** and launch **Jupyter Notebook**.
+3. Navigate to the cloned project folder and open `notebook.ipynb`.
+4. Run all cells in order (**Run > Run All Cells**).
 
 No command line or manual package installation required.
 
 ## Verifying a Successful Run
 
-A complete run produces **13 inline figures** and no errors. Key checkpoints:
+A complete run produces **16 inline figures** and no errors. Key checkpoints:
 
-- **Cell 10** (Data Cleaning) prints row counts before and after filtering and writes `data/powerlifting-clean.csv`.
-- **Cell 16** (RQ1 Summary) prints the number of qualifying subgroup pairs.
-- **Cell 18** (RQ1 Results Summary) prints a breakdown of significant vs. non-significant subgroups for TotalKg and DOTS.
-- **Cell 43** (RQ2 Chi-Squared) prints contingency tables and chi-square test results for men and women.
-- **Cell 52** (RQ3 Intervals) prints a summary line: "Summary: X of 12 age bins have a one-sided 95% lower bound above zero."
+- **Cell 8** (Data Cleaning) prints filtering removal counts and the final cleaned shape, and writes `data/powerlifting-clean.csv`.
+- **Cell 11** (RQ1 Summary) prints the number of qualifying subgroup pairs.
+- **Cell 13** (RQ1 Results Summary) prints a breakdown of significant vs. non-significant subgroups for TotalKg and DOTS.
+- **Cell 26** (RQ2 Chi-Squared) prints contingency tables and chi-square test results for men and women.
+- **Cell 30** (RQ3 Intervals) prints a summary line: "Summary: X of 12 age bins have a one-sided 95% lower bound above zero."
 
 If any cell raises an error, restart the kernel and re-run all cells from the top -- earlier cells define variables that later cells depend on.
