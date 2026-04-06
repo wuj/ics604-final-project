@@ -10,6 +10,7 @@ This project examines whether powerlifting competition entries differ in perform
 .
 ├── notebook.ipynb          # Full analysis notebook (run top-to-bottom)
 ├── README.md               # This file
+├── requirements.txt        # Python package dependencies (install with pip)
 ├── report.pdf              # Written report
 ├── data/                   # Dataset directory (dataset files are not tracked, see below)
 └── proposal/               
@@ -43,20 +44,12 @@ The dataset is too large to include in the repository (~782 MB, ~3.8 million row
 
 ## Requirements
 
-**Python 3.13+** with the following packages:
-
-- jupyter
-- matplotlib
-- numpy
-- pandas
-- scipy
-
-No additional or non-standard libraries are needed.
+**Python 3.13+** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
 
 ### Install dependencies
 
 ```bash
-pip install jupyter matplotlib numpy pandas scipy
+pip install -r requirements.txt
 ```
 
 ## Running the Notebook  
@@ -71,7 +64,7 @@ After cloning the repository and installing dependencies (see [Requirements](#re
 
 ```bash
 cd ics604-final-project
-jupyter notebook notebook.ipynb
+jupyter lab notebook.ipynb
 ```
 
 ### Option B: Anaconda

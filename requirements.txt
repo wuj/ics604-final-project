@@ -1,0 +1,10 @@
+# ICS 604 Final Project - Python dependencies
+# Python 3.14.3
+
+pandas==3.0.1
+numpy==2.4.2
+matplotlib==3.10.8
+scipy==1.17.1
+
+# For running the Jupyter notebook
+jupyterlab==4.5.6
