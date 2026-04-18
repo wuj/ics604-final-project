@@ -58,7 +58,7 @@ The notebook is designed to run top-to-bottom in a single pass.  Always run all 
 
 **Note:** A full Run All can take several minutes. The analysis runs 10,000 bootstrap resamples and 10,000 permutation shuffles across 78 subgroups (RQ1) and 12 age bins (RQ3), plus additional process illustrations. Expect the RQ1 test cell to be the longest-running cell.
 
-### Option A: Local
+### Option A: Jupyter Lab
 
 After cloning the repository and installing dependencies (see [Requirements](#requirements) above), launch the notebook from the project folder:
 
@@ -66,6 +66,7 @@ After cloning the repository and installing dependencies (see [Requirements](#re
 cd ics604-final-project
 jupyter lab notebook.ipynb
 ```
+Run all cells in order. Click *restart the kernel and run all cells*.
 
 ### Option B: Anaconda
 
@@ -79,7 +80,7 @@ After cloning the repository (see [Clone the Repository](#clone-the-repository) 
    ```
 4. Open **Anaconda Navigator** and launch **Jupyter Notebook** or **JupyterLab** from that same environment.
 5. Navigate to the cloned project folder and open `notebook.ipynb`.
-6. Run all cells in order (**Run > Run All Cells**).
+6. Run all cells in order (*Run > Run All Cells*).
 
 Anaconda includes Python and Jupyter, but it may not include the exact package versions pinned in [`requirements.txt`](requirements.txt). Installing from `requirements.txt` helps avoid version mismatch problems.
 
