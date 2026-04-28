@@ -45,7 +45,7 @@ The dataset is too large to include in the repository (~782 MB, ~3.8 million row
 
 ## Requirements
 
-**Python 3.13** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
+**Python 3.13** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed. Developed on both Windows and macOS using Python 3.13.11.
 
 ### Install dependencies
 
