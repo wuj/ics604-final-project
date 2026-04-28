@@ -1,5 +1,5 @@
 # ICS 604 Final Project - Python dependencies
-# Python 3.14.3
+# Python 3.13
 
 pandas==3.0.1
 numpy==2.4.2

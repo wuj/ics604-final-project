@@ -2,6 +2,8 @@
 
 **Jeff Wu | ICS 604: Applied Data Science | Spring 2026 | University of Hawaii at Manoa**
 
+![Project banner: Natty or Not? Let's ask 3.8M rows.](images/hero.png)
+
 This project examines whether powerlifting competition entries differ in performance depending on whether the entry was drug tested or untested, using the OpenPowerlifting public dataset (~3.8 million records). The analysis compares TotalKg and DOTS scores across sex, weight class, equipment, performance level, and age.
 
 ## Repository Structure
@@ -42,7 +44,7 @@ The dataset is too large to include in the repository (~782 MB, ~3.8 million row
 
 ## Requirements
 
-**Python 3.14.3** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
+**Python 3.13** with the packages listed in [`requirements.txt`](requirements.txt). No additional or non-standard libraries are needed.
 
 ### Install dependencies
 
