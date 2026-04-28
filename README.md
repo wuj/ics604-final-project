@@ -10,12 +10,12 @@ This project examines whether powerlifting competition entries differ in perform
 
 ```
 .
-├── notebook.ipynb          # Full analysis notebook (run top-to-bottom)
-├── README.md               # This file
-├── requirements.txt        # Python package dependencies (install with pip)
-├── report.pdf              # Written report that summarizes the study, methods, and results
-├── data/                   # Dataset directory (dataset files are not tracked, see below)
-├── images/                 # Image assets used by this README (e.g., hero banner)
+├── notebook.ipynb                 # Full analysis notebook (run top-to-bottom)
+├── README.md                      # This file
+├── requirements.txt               # Python package dependencies (install with pip)
+├── ICS604_final_report_Jeff.pdf   # Written report that summarizes the study, methods, and results
+├── data/                          # Dataset directory (dataset files are not tracked, see below)
+├── images/                        # Image assets used by this README (e.g., hero banner)
 ```
 
 ## Clone the Repository  
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 The notebook is designed to run top-to-bottom in a single pass.  Always run all cells in order. 
 
-[`report.pdf`](report.pdf) is the companion written report for this project. It gives a shorter summary of the research questions, methods, results, and conclusions. Read it alongside [`notebook.ipynb`](notebook.ipynb) if you want the narrative write-up in addition to the full reproducible analysis.
+[`ICS604_final_report_Jeff.pdf`](ICS604_final_report_Jeff.pdf) is the companion written report for this project. It gives a shorter summary of the research questions, methods, results, and conclusions. Read it alongside [`notebook.ipynb`](notebook.ipynb) if you want the narrative write-up in addition to the full reproducible analysis.
 
 **Note:** A full Run All can take several minutes. The analysis runs 10,000 bootstrap resamples and 10,000 permutation shuffles across 78 subgroups (RQ1) and 12 age bins (RQ3), plus additional process illustrations. Expect the RQ1 test cell to be the longest-running cell.
 
