@@ -10,12 +10,12 @@ This project examines whether powerlifting competition entries differ in perform
 
 ```
 .
-├── notebook.ipynb                 # Full analysis notebook (run top-to-bottom)
+├── notebook.ipynb                 # Analysis notebook
 ├── README.md                      # This file
-├── requirements.txt               # Python package dependencies (install with pip)
-├── ICS604_final_report_Jeff.pdf   # Written report that summarizes the study, methods, and results
-├── data/                          # Dataset directory (dataset files are not tracked, see below)
-├── images/                        # Image assets used by this README (e.g., hero banner)
+├── requirements.txt               # Pinned Python dependencies
+├── ICS604_final_report_Jeff.pdf   # Written report
+├── data/                          # Dataset (not tracked)
+├── images/                        # README image assets
 ```
 
 ## Clone the Repository  
