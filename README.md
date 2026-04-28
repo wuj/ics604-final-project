@@ -15,6 +15,7 @@ This project examines whether powerlifting competition entries differ in perform
 ├── requirements.txt        # Python package dependencies (install with pip)
 ├── report.pdf              # Written report that summarizes the study, methods, and results
 ├── data/                   # Dataset directory (dataset files are not tracked, see below)
+├── images/                 # Image assets used by this README (e.g., hero banner)
 ```
 
 ## Clone the Repository  
