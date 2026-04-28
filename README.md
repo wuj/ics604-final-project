@@ -87,6 +87,31 @@ After cloning the repository (see [Clone the Repository](#clone-the-repository) 
 
 Anaconda includes Python and Jupyter, but it may not include the exact package versions pinned in [`requirements.txt`](requirements.txt). Installing from `requirements.txt` helps avoid version mismatch problems.
 
+### Option C: Python venv
+
+This option creates a self-contained Python environment so the pinned packages from [`requirements.txt`](requirements.txt) do not affect any other Python project on the machine. After cloning the repository (see [Clone the Repository](#clone-the-repository) above) and downloading the dataset (see [Get the Dataset](#get-the-dataset) above):
+
+1. From the project folder, create and activate a fresh virtual environment:
+   ```bash
+   cd ics604-final-project
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+2. Install the pinned packages into the environment:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Launch JupyterLab from the activated environment and open the notebook:
+   ```bash
+   jupyter lab notebook.ipynb
+   ```
+
+4. Run all cells in order (*Restart Kernel and Run All Cells*).
+
+When finished, deactivate the environment with `deactivate`, or simply close the shell.
+
 ## Verifying a Successful Run
 
 A complete run produces **16 inline figures** and no errors. Key checkpoints:
