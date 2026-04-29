@@ -4,6 +4,8 @@
 
 ![Project banner: Natty or Not? Let's ask 3.8M rows.](images/hero.png)
 
+*The banner image was generated with an AI image generation tool by Jeff Wu; decorative only - not part of the statistical analysis.*
+
 This project examines whether powerlifting competition entries differ in performance depending on whether the entry was drug tested or untested, using the OpenPowerlifting public dataset (~3.8 million records). The analysis compares TotalKg and DOTS scores across sex, weight class, equipment, performance level, and age.
 
 ## Repository Structure
